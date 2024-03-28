@@ -49,3 +49,14 @@
 // console.log(extension);
 
 // CHAIN METHOD
+//VARIABLE SCOPE
+
+// let x = 3;
+
+// function function1() {
+//   let x = 2;
+//   console.log(x);
+// }
+
+// function1();
+// console.log(x);
