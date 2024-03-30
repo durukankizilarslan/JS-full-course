@@ -33,3 +33,8 @@ input {
   text-align: center;
   font-weight: bold;
 }
+
+#dice-images img {
+  width: 150px;
+  margin: 5px;
+}
