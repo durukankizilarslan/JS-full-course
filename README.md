@@ -7,3 +7,7 @@ console.log();
 
 window.alert();
 window.prompt();
+`${}`
+Data types
+typeof
+arithmetic operators
