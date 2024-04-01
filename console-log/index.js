@@ -442,25 +442,127 @@
 
 // PRACTICING INHERITANCE
 
-class Animal {
-  alive = true;
+// class Animal {
+//   alive = true;
 
-  eat() {
-    console.log(`This ${this.name} is eating`);
-  }
-  sleep() {
-    console.log(`This ${this.name} is sleepping`);
-  }
-}
+//   eat() {
+//     console.log(`This ${this.name} is eating`);
+//   }
+//   sleep() {
+//     console.log(`This ${this.name} is sleepping`);
+//   }
+// }
 
-class Rabbit extends Animal {
-  name = "rabbit";
-}
+// class Rabbit extends Animal {
+//   name = "rabbit";
 
-class Fish extends Animal {
-  name = "fish";
-}
+//   run() {
+//     console.log(`This ${this.name} is running`);
+//   }
+// }
 
-class Hawk extends Animal {
-  name = "hawk";
-}
+// class Fish extends Animal {
+//   name = "fish";
+
+//   swim() {
+//     console.log(`This ${this.name} is swimming`);
+//   }
+// }
+
+// class Hawk extends Animal {
+//   name = "hawk";
+
+//   fly() {
+//     console.log(`This ${this.name} is flying`);
+//   }
+// }
+
+// const rabbit = new Rabbit();
+// const fish = new Fish();
+// const hawk = new Hawk();
+
+// rabbit.alive = false;
+// console.log(rabbit.alive);
+// hawk.eat();
+// rabbit.run();
+// fish.swim();
+// hawk.fly();
+
+// ------------------------------
+
+// Practicing super keyword
+
+// class Animal {
+//   alive = true;
+
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   move(speed) {
+//     console.log(`This ${this.name} moves at a speed of ${speed} mph`);
+//   }
+
+//   eat() {
+//     console.log(`This ${this.name} is eating`);
+//   }
+//   sleep() {
+//     console.log(`This ${this.name} is sleepping`);
+//   }
+// }
+
+// class Rabbit extends Animal {
+//   constructor(name, age, runSpeed) {
+//     super(name, age);
+//     this.runSpeed = runSpeed;
+//   }
+
+//   run() {
+//     console.log(`This ${this.name} is running`);
+
+//     super.move(this.runSpeed);
+//   }
+// }
+
+// class Fish extends Animal {
+//   constructor(name, age, swimSpeed) {
+//     super(name, age);
+//     this.swimSpeed = swimSpeed;
+//   }
+
+//   swim() {
+//     console.log(`This ${this.name} is swimming`);
+
+//     super.move(this.swimSpeed);
+//   }
+// }
+
+// class Hawk extends Animal {
+//   constructor(name, age, flySpeed) {
+//     super(name, age);
+//     this.flySpeed = flySpeed;
+//   }
+
+//   fly() {
+//     console.log(`This ${this.name} is flying`);
+
+//     super.move(this.flySpeed);
+//   }
+// }
+
+// const animal1 = new Animal("some animal", 5);
+// const rabbit = new Rabbit("rabbit", 1, 25);
+// const fish = new Fish("fish", 2, 12);
+// const hawk = new Hawk("hawk", 3, 50);
+
+// hawk.fly();
+// console.log(rabbit.runSpeed);
+// animal1.move(30);
+// rabbit.move();
+
+// rabbit.run();
+// fish.swim();
+// hawk.fly();
+
+// ---------------------------------------------------------------
