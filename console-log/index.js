@@ -249,14 +249,218 @@
 
 // ARROW FUNCTIONS
 
-const numbers = [1, 2, 3, 4, 5, 6];
+// const numbers = [1, 2, 3, 4, 5, 6];
 
-const squares = numbers.map((element) => Math.pow(element, 2));
-const cubes = numbers.map((element) => Math.pow(element, 3));
-const oddNums = numbers.filter((element) => element % 2 === 0);
-const total = numbers.reduce((accumulator, element) => accumulator + element);
+// const squares = numbers.map((element) => Math.pow(element, 2));
+// const cubes = numbers.map((element) => Math.pow(element, 3));
+// const oddNums = numbers.filter((element) => element % 2 === 0);
+// const total = numbers.reduce((accumulator, element) => accumulator + element);
 
-console.log(squares);
-console.log(cubes);
-console.log(oddNums);
-console.log(total);
+// console.log(squares);
+// console.log(cubes);
+// console.log(oddNums);
+// console.log(total);
+
+//OBJECTS
+
+// const person = {
+//   firstName: "Spongebob",
+//   lastName: "Squarepants",
+//   age: 30,
+//   isEmployed: true,
+//   sayHello: function () {
+//     console.log("Hi! I'm Spongebob!");
+//   },
+//   eat: () => console.log("I'm eating a crabby patty."),
+// };
+
+// const person2 = {
+//   firstName: "Patrick",
+//   lastName: "Star",
+//   age: 42,
+//   isEmployed: false,
+//   sayHello: () => {
+//     console.log("Hey, I'm Patrick...");
+//   },
+//   eat: () => {
+//     console.log("I'm eating nothing.");
+//   },
+// };
+
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.age);
+// console.log(person.isEmployed);
+// person.sayHello();
+// person.eat();
+
+// console.log(person2.firstName);
+// console.log(person2.lastName);
+// console.log(person2.age);
+// person2.sayHello();
+// person2.eat();
+
+//PRACTICING THIS KEYWORD
+
+// const person = {
+//   firstName: "Spongebob",
+//   lastName: "Squarepants",
+//   favFood: "crabby patty",
+//   age: 30,
+//   isEmployed: true,
+//   sayHello: function () {
+//     console.log(`Hi! I'm ${this.firstName}!`);
+//   },
+//   eat: function () {
+//     console.log(`I'm eating a ${this.favFood}.`);
+//   },
+// };
+
+// const person2 = {
+//   firstName: "Patrick",
+//   lastName: "Star",
+//   age: 42,
+//   isEmployed: false,
+//   sayHello: () => {
+//     console.log("Hey, I'm Patrick...");
+//   },
+//   eat: () => {
+//     console.log("I'm eating nothing.");
+//   },
+// };
+
+// person.eat();
+// console.log(this);
+
+// CONSTRUCTOR PRACTICE
+
+// function Car(make, model, year, color) {
+//   (this.make = make),
+//     (this.model = model),
+//     (this.year = year),
+//     (this.color = color),
+//     (this.drive = function () {
+//       console.log(`You drive a ${this.make} ${this.model}`);
+//     });
+// }
+
+// const car1 = new Car("Ford", "Mustang", 2024, "red");
+// const car2 = new Car("Chevrolet", "Camaro", 2025, "blue");
+// const car3 = new Car("Dodge", "Charger", 2026, "silver");
+
+// car1.drive();
+// car2.drive();
+// car3.drive();
+
+// CLASSES PRACTICE
+
+// const salesTax = 0.05;
+
+// class Product {
+//   constructor(name, price) {
+//     this.name = name;
+//     this.price = price;
+//   }
+
+//   displayProduct() {
+//     console.log(`Product: ${this.name}`);
+//     console.log(`Price: ${this.price.toFixed(2)}`);
+//   }
+
+//   calculateTotal(salesTax) {
+//     return this.price + this.price * salesTax;
+//   }
+// }
+
+// const product1 = new Product("Shirt", 19.99);
+// const product2 = new Product("Pants", 22.5);
+// const product3 = new Product("Underwear", 100.0);
+
+// product3.displayProduct();
+
+// const total = product3.calculateTotal(salesTax).toFixed(2);
+
+// console.log(`Total price of the underwear is ${total}`);
+
+//PRACTICING STATIC KEYWORD
+
+// class MathUtil {
+//   static PI = 3.14159;
+
+//   static getDiameter(radius) {
+//     return radius * 2;
+//   }
+
+//   static getCircumference(radius) {
+//     return 2 * this.PI * radius;
+//   }
+
+//   static getArea(radius) {
+//     return this.PI * radius * radius;
+//   }
+// }
+
+// console.log(MathUtil.PI);
+// console.log(MathUtil.getDiameter(10));
+// console.log(MathUtil.getCircumference(10));
+// console.log(MathUtil.getArea(10));
+
+// const mathUtil1 = new MathUtil();
+// console.log(mathUtil1.PI);
+
+// console.log(MathUtil.getCircumference(10));
+
+// class User {
+//   static userCount = 0;
+
+//   constructor(username) {
+//     this.username = username;
+//     User.userCount++;
+//   }
+
+//   static getUserCount() {
+//     console.log(`There are ${this.userCount} users right now.`);
+//   }
+
+//   sayHello() {
+//     console.log(`Hello my name is ${this.username}`);
+//   }
+// }
+
+// const user1 = new User("Spongebob");
+// const user2 = new User("Patrick");
+
+// const user3 = new User("Sandy");
+
+// console.log(user1.username);
+// console.log(user1.userCount);
+
+// user1.sayHello();
+// user2.sayHello();
+// console.log(User.userCount);
+// User.getUserCount();
+
+// PRACTICING INHERITANCE
+
+class Animal {
+  alive = true;
+
+  eat() {
+    console.log(`This ${this.name} is eating`);
+  }
+  sleep() {
+    console.log(`This ${this.name} is sleepping`);
+  }
+}
+
+class Rabbit extends Animal {
+  name = "rabbit";
+}
+
+class Fish extends Animal {
+  name = "fish";
+}
+
+class Hawk extends Animal {
+  name = "hawk";
+}
