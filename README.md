@@ -15,8 +15,8 @@ Accepting user input: window.prompt(),  HTML textbox (input element and assignin
 Type conversion  
 
 
-Objects
-Classes
-Constructors
-Inheritance
-super() keyword
+Objects  
+Classes  
+Constructors  
+Inheritance  
+super() keyword  
