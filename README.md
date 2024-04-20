@@ -6,6 +6,8 @@ PART 1
 
 
 Const and Variable Declarations / Assignments  
+Data Types
+
 document.getElementById();  
 .textContent , .innerHTML  
 console.log();  
@@ -20,6 +22,11 @@ Accepting user input: window.prompt(),  HTML textbox (input element and assignin
 Type conversion  
 
 
+Objects  
+Classes  
+Constructors  
+Inheritance  
+super() keyword  
 
 
 ==================================  
@@ -40,10 +47,5 @@ PART 2
 -map() method  
 -filter() method  
 -reduce() method
+----------------------------------------
 
-
-Objects  
-Classes  
-Constructors  
-Inheritance  
-super() keyword  
