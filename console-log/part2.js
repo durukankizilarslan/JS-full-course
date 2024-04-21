@@ -133,52 +133,73 @@
 
 // ARRAY OF OBJECTS
 
-const fruits = [
-  { name: "apple", color: "red", calories: 95 },
-  { name: "orange", color: "orange", calories: 45 },
-  { name: "banana", color: "yellow", calories: 105 },
+// const fruits = [
+//   { name: "apple", color: "red", calories: 95 },
+//   { name: "orange", color: "orange", calories: 45 },
+//   { name: "banana", color: "yellow", calories: 105 },
+// ];
+
+// fruits.push({
+//   name: "grapes",
+//   color: "purple",
+//   calories: 95,
+// });
+
+// console.log(fruits.slice(-1));
+// console.log(fruits.pop(-1));
+// console.log(fruits);
+
+// //-------------- map()
+
+// const fruitNames = fruits.map((fruit) => fruit.name);
+// const fruitColors = fruits.map((fruit) => fruit.color);
+
+// const fruitCalories = fruits.map((fruit) => fruit.calories);
+
+// console.log(fruitNames);
+// console.log(fruitColors);
+// console.log(fruitCalories);
+
+// //-------------- filter()
+
+// const fruitNamesFilter = fruits.filter((fruit) => fruit.name === "banana");
+// const fruitsLowCal = fruits.filter((fruit) => fruit.calories < 100);
+// const fruitsHighCal = fruits.filter((fruit) => fruit.calories >= 100);
+
+// console.log(fruitNamesFilter);
+// console.log(fruitsLowCal);
+// console.log(fruitsHighCal);
+
+// //-------------- reduce()
+
+// const maxFruit = fruits.reduce((max, fruit) =>
+//   fruit.calories > max.calories ? fruit : max
+// );
+
+// const minFruit = fruits.reduce((min, fruit) =>
+//   min.calories < fruit.calories ? min : fruit
+// );
+
+// console.log(maxFruit);
+// console.log(minFruit);
+
+// sort() method
+
+//====================-
+
+let numbers = [1, 10, 9, 2, 3, 8, 4, 7, 5, 6];
+
+numbers.sort((a, b) => a - b);
+
+console.log(numbers);
+
+const people = [
+  { name: "Spongebob", age: 30, gpa: 3.0 },
+  { name: "Patrick", age: 37, gpa: 1.5 },
+  { name: "Squidward", age: 51, gpa: 2.5 },
+  { name: "Sandy", age: 27, gpa: 4.0 },
 ];
+1;
+people.sort((a, b) => a.name.localeCompare(b.name));
 
-fruits.push({
-  name: "grapes",
-  color: "purple",
-  calories: 95,
-});
-
-console.log(fruits.slice(-1));
-console.log(fruits.pop(-1));
-console.log(fruits);
-
-//-------------- map()
-
-const fruitNames = fruits.map((fruit) => fruit.name);
-const fruitColors = fruits.map((fruit) => fruit.color);
-
-const fruitCalories = fruits.map((fruit) => fruit.calories);
-
-console.log(fruitNames);
-console.log(fruitColors);
-console.log(fruitCalories);
-
-//-------------- filter()
-
-const fruitNamesFilter = fruits.filter((fruit) => fruit.name === "banana");
-const fruitsLowCal = fruits.filter((fruit) => fruit.calories < 100);
-const fruitsHighCal = fruits.filter((fruit) => fruit.calories >= 100);
-
-console.log(fruitNamesFilter);
-console.log(fruitsLowCal);
-console.log(fruitsHighCal);
-
-//-------------- reduce()
-
-const maxFruit = fruits.reduce((max, fruit) =>
-  fruit.calories > max.calories ? fruit : max
-);
-
-const minFruit = fruits.reduce((min, fruit) =>
-  min.calories < fruit.calories ? min : fruit
-);
-
-console.log(maxFruit);
-console.log(minFruit);
+console.log(people);
